@@ -2,13 +2,28 @@ body{
     margin: 0;
     padding: 0%;
     color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: fantasy;
   }
-  
+  ::selection {
+    background: none;
+    color: inherit;
+}
+
+  img{
+    max-width: 100%;
+  }
+  h1,h2,h3,h4,h6{
+    margin: 0;
+    padding: 0;
+  }
 .main-wrapper{
     height: 100vh;
     width: 100vw;
     position: relative;  
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .background-video{
     height: 100vh;
@@ -24,10 +39,149 @@ body{
     left: 5rem;
     bottom: 0;
     font-size: 17vw;
-    background-image: url(''); /* Replace with your image path */
+    background-image: url('/lovepik-blue-sky-and-white-clouds-background-image_401742650.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the heading area */
     background-position: center; /* Centers the background image */
     color: transparent; /* Hides the text color */
     -webkit-background-clip: text; /* Clips the background to the text */
     background-clip: text; /* Clips the background to the text */
+    font-weight: 900;
   }
+  .floder-icon{
+    width: 80px;
+  }
+  .menu{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+   
+  }
+  .image-wrapper{
+    position: relative;
+  }
+.image-cover{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+.menu-popup{
+    position:absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #252626;
+    border-radius: 5px;
+    overflow: hidden;
+   transform: scale(0.9);
+   opacity: 0;
+   display: none;
+   transition: transform 0.6s ease, opacity 0.6s ease;
+   
+}
+.manu-head-shot{
+    background-color: #393B3B;
+    padding: 0.5rem;
+}
+.manu-thinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.display-items{
+    display: flex;
+    gap: 5px;
+}
+.folder-name{
+    font-family:'Courier New', Courier, monospace ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.folder-name-icon-wrapper{
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.folder-icon{
+    height: 15px;
+}
+.items{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#cut{
+    background-color: #FE5F57;
+}
+#minimise{
+    background-color: #FEBC2D;
+}
+#full{
+    background-color: #27C840;
+}
+.content-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-family:'Courier New', Courier, monospace ;
+  font-size: 0.9rem;
+}
+.content-image{
+  width: 5vw;
+  transition: transform 0.4s ease;
+}
+.content-image:hover{
+  transform: scale(1.1);
+}
+.menu-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
+  gap: 20px;
+  padding: 2rem;
+}
+h6{
+  font-size: 1.3rem;
+}
+.minimise-top{
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.548);
+  padding: 0.5rem;
+  width: 300px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  top: 1rem;
+  left: 4rem;
+
+}
+.icon{
+  width: 40px;
+}
+.icon-name-wrapper{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+.crosses{
+  transform: rotate(45deg);
+  font-size: 2rem;
+  margin-right: 0.6rem;
+  cursor: pointer;
+}
