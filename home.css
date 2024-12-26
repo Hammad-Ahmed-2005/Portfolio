@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0%;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+.main-wrapper{
+    height: 100vh;
+    width: 100vw;
+    position: relative;  
+  }
+  .background-video{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+  }
+  .main-heading{
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    left: 5rem;
+    bottom: 0;
+    font-size: 17vw;
+    background-image: url(''); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the heading area */
+    background-position: center; /* Centers the background image */
+    color: transparent; /* Hides the text color */
+    -webkit-background-clip: text; /* Clips the background to the text */
+    background-clip: text; /* Clips the background to the text */
+  }
