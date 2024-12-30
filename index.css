@@ -39,7 +39,7 @@ body{
     left: 5rem;
     bottom: 0;
     font-size: 17vw;
-    background-image: url('/lovepik-blue-sky-and-white-clouds-background-image_401742650.jpg'); /* Replace with your image path */
+    background-image: url('lovepik-blue-sky-and-white-clouds-background-image_401742650.jpg'); /* Replace with your image path */
     background-size: cover; /* Ensures the image covers the heading area */
     background-position: center; /* Centers the background image */
     color: transparent; /* Hides the text color */
